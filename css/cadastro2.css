@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;   
+}
+
+.section_principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 40%;
+    height: 700px;
+    box-shadow: 10px 10px 20px #5bcce0;
+    background-color: #ffffff;
+    margin-top: 1%;
+}
+
+.main_form{
+    margin: 0 auto;
+    width: 75%;
+    height: 80%;
+    margin-top: -10px;
+    margin-top: 25px;
+}
+
+.form_titulo{
+    margin: 30px;
+    text-align: center;
+    font-size: 1.9em;
+    color: #cd853f;
+    font-family: 'Merienda', cursive;
+}
+
+.elementos_form{
+    position: relative;
+}
+
+.elementos_form input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #48d1cc;
+    outline: 0;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.elementos_form label{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    cursor: text;
+    transition: 0.8s ease-in-out;
+    font-size: 16px;
+    font-family: 'Merienda', cursive;
+}
+
+.elementos_form input:focus,
+.elementos_form input:valid{
+    border-bottom: 2px solid #cd853f;
+}
+
+.elementos_form input:focus ~ label, .elementos_form  input:valid ~ label
+{
+    transform: translateY(-24px);
+    font-size: 15px;
+    color: #cd853f;
+}
+
+label{
+    color: #023f3d; 
+    font-weight: bold;
+}
+
+label:hover{
+    cursor: pointer;
+    color: #cd853f;
+}
+
+input{
+    width: 99%;
+    margin: 15px 0 20px 0;
+    height: 30px;
+}
+
+.form_estado_cidade{
+    display: flex;
+    justify-content: space-around;
+}
+
+.select_estado{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.select_estado{
+    font-family: 'Merienda', cursive;
+}
+
+select{
+    width: 30%;
+    height: 37px;
+    border: 1px solid #51e2dd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #046a67;
+    outline: none;
+    margin-right: 20px;
+    font-family: 'Merienda', cursive;
+}
+
+select:hover, select:valid{
+    border: 1px solid #cd853f;
+}
+
+.form_btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    margin-top: 40px;
+}
+
+.cadastrar_btn{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #cd853f;
+    color: #ffffff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 1px #7b4713;
+    transition: box-shadow 0.2s ease, transform 0.3s ease;
+}
+
+.cadastrar_btn:active{
+    box-shadow: 0 0 0 0 #7b4713, inset 3px 3px 3px #7b4713;
+    transform: translate(3px, 3px);
+}
+
+.cadastrar_btn:hover{
+    font-weight: bold;
+}
+
+.cadastrar_btn a{
+    color: #ffffff;
+}
+
+span{
+    margin-left: 5px;
+    color: red;
+}
+
+aside{
+    border: 1px solid #0097b2;
+    border-radius: 10px;
+    width: 40%;
+    height: 700px;
+    margin-top: 1%;
+    box-shadow: 10px 10px 20px #5bcce0;
+    background-color: #0097b2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+aside figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+aside figure img{
+    width: 80%;
+}
+
+aside h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+aside h1 a{
+    color: #cd853f;
+    text-shadow: 1px 1.5px 1px #48d1cc;
+    transition: all 0.5s;
+}
+
+aside h1 a:hover{
+    color: #48d1cc;
+    text-shadow: 1px 1.5px 1px #046a67;
+    transition: all 0.5s;
+}

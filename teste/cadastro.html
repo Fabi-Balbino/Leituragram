@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Satisfy&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type='text/javascript' src='http://files.rafaelwendel.com/jquery.js'></script>
+        <script type='text/javascript' src='cep.js'></script>
+    <title>Leituragram - Cadastre-se</title>
+</head>
+<body>
+
+    <section class="seg_section">
+
+        <form action="" method="POST" enctype="multipart/form-data" class="teste">
+
+            <div class="form">
+                <div class="div_form">
+                    <h1 class="titulo_div_form">Cadastre-se</h1>
+    
+                    <div class="div_form_div">
+                        <input type="text" name="nome" id="nome" class="div_form_input" required>
+                        <label for="nome">Nome <span>*</span> </label>
+                    </div>
+                    
+                    <div class="div_form_div">
+                        <input type="text" name="data_nasc" id="data_nasc" class="div_form_input data" required>
+                        <label for="data_nasc">Data de Nascimento <span>*</span> </label>
+                    </div>
+                    
+                    <div class="div_form_div">
+                        <input type="number" autocomplete="off"  maxlength="14"  name="cpf" id="cpf" class="div_form_input" required>
+                        <label for="cpf">CPF <span>*</span>  </label>
+                    </div>
+    
+                    <div class="div_form_div">
+                        <input type="tel" maxlength="15" onkeyup="handlePhone(event)" name="telefone" id="telefone" class="div_form_input" required>
+                        <label for="telefone">Telefone <span>*</span>  </label>
+                    </div>
+                    
+                    <div class="div_form_div">
+                        <input type="text" name="email" id="email" class="div_form_input" required>
+                        <label for="email">Email <span>*</span>  </label>
+                    </div>
+    
+                    <div class="div_form_div">
+                        <input type="password" name="senha" id="senha" class="div_form_input" required>
+                        <label for="senha">Senha <span>*</span> </label>
+                    </div>
+    
+                    <label for="avatar" class="avatar">Foto de Perfil</label>
+                    <input type="file" name="avatar" id="avatar" accept="image/*">    
+                </div>
+            </div>
+
+            <div class="form">
+                <div class="div_form2">
+                    <div class="div_form_div">
+                        <input type="text" name="cep" id="cep" maxlength="8" class="div_form_input" required>
+                        <label for="cep">CEP<span>*</span> </label>
+                    </div>
+    
+                    <div class="div_form_div">
+                        <input type="text" name="rua" id="rua" size="45" class="div_form_input" required>
+                        <label for="rua">Rua <span>*</span>  </label>
+                    </div>
+    
+                    <div class="div_form_div">
+                        <input type="text" name="numero" id="numero" size="5" class="div_form_input" required>
+                        <label for="numero">Número <span>*</span>  </label>
+                    </div>
+    
+                    <div class="div_form_div">
+                        <input type="text" name="bairro" id="bairro" size="25" class="div_form_input" required>
+                        <label for="bairro">Bairro <span>*</span>  </label>
+                    </div>
+    
+                    <div class="div_form_div">
+                        <input type="text" name="complemento" id="complemento" class="div_form_input" required>
+                        <label for="complemento">Complemento <span>*</span>  </label>
+                    </div>
+    
+                    <div class="label_estados">
+                        <label for="cidade" class="label_cidade">Cidade <span>*</span>  </label>
+                        <label for="estados" class="estados">Estados <span>*</span>  </label>
+                    </div>
+    
+                    <div class="estado_cidade">
+    
+                        <input type="text" name="cidade" id="cidade" size="25" class="cidade" required>
+    
+                        <select name="estados" id="estados" required>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+                    <div class="div_btn">
+                        <input type="submit" value="Cadastrar" class="cadastrar_btn">
+                    </div>    
+                </div>
+            </div>
+        </form>
+   <script src="js/mascara_telefone.js"></script>
+   <script src="js/mascara_cpf.js"></script>
+    
+</body>
+</html>

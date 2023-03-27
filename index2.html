@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <script src="js/alertaestrela.js" defer></script>
+    <script src="js/carrosselindex.js" defer></script>
+    <script src="js/menuscript.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <title>Leituragram</title>
+</head>
+<body>
+    <header>
+        <figure class="figure_header">
+            <img src="img/logoHeader.jpg" alt="" class="logo_header">
+        </figure>
+    </header>
+
+    <nav class="nav_principal">
+        <a href="index2.html" class="inicio">Leituragram</a>
+        <div class="pesquisa"> 
+            <label for="categoria" class="categoria">
+                <p class="p_categoria">Categoria</p> 
+                <p class="seta_categoria">&raquo;</p>
+                <nav class="menu_categoria">
+                    <ul>
+                        <li><a href="#" class="borda_dinamica">Ação</a></li>
+                        <li><a href="#" class="borda_dinamica">Autoajuda</a></li>
+                        <li><a href="#" class="borda_dinamica">Aventura</a></li>
+                        <li><a href="#" class="borda_dinamica">Biografia</a></li>
+                        <li><a href="#" class="borda_dinamica">Conto</a></li>
+                        <li><a href="#" class="borda_dinamica">Criminal</a></li>
+                        <li><a href="#" class="borda_dinamica">Distopia</a></li>
+                        <li><a href="#" class="borda_dinamica">Fantasia</a></li>
+                        <li><a href="#" class="borda_dinamica">Ficção</a></li>
+                        <li><a href="#" class="borda_dinamica">História</a></li>
+                        <li><a href="#" class="borda_dinamica">Horror</a></li>
+                        <li><a href="#" class="borda_dinamica">Humor</a></li>
+                        <li><a href="#" class="borda_dinamica">Mistério</a></li>
+                        <li><a href="#" class="borda_dinamica">Romance</a></li>        
+                        <li><a href="#" class="borda_dinamica">Suspense</a></li>
+                    </ul>
+                </nav>
+            </label> 
+            <div class="div_barra_pesquisa ">
+                <input type="text" class="barra_pesquisa" placeholder="Pesquisar">
+                <a href="#">
+                    <img src="img/loupe.png" alt="" class="lupa">
+                </a>
+            </div>
+        </div>
+        <ul class="elementos_menu_principal">
+            <li><a href="inicio.html" class="borda_dinamica seg_inicio">Início</a></li>
+            <li><a href="sobre_nos.html" class="borda_dinamica">Sobre nós</a></li>
+            <li><a href="cadastro1.html" class="borda_dinamica">Cadastre-se</a></li>
+            <li><a href="login.html" class="borda_dinamica li_tinta">Entrar</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="section_slide">
+        <div class="content_slide">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1">
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+        
+                <div class="slide s1">
+                    <article class="primeira_section">
+                        <div class="conteudo_pri_section">
+                            <div class="texto">
+                                <h1>Leituragram</h1>
+                                <p>Somos uma plataforma que conecta leitores e auxilia no processo de passar livros adiante.</p>
+                            </div>
+                
+                            <div class="img">
+                                <figure class="figure_pri_section">
+                                    <img src="img/sobrenos.jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="slide">
+                    <article class="segunda_section">
+                        <div class="conteudo_seg_section">
+                            <article class="livros">
+                                <img src="img/sobre_livros.jpg" alt="">
+                                <p>Disponibilize e adquira livros</p>
+                            </article>
+
+                            <article class="interacao">
+                                <img src="img/sobre_interacao.jpg" alt="">
+                                <p>Interaja com os usuários do site</p>
+                            </article>
+                
+                            <article class="comprar">
+                                <img src="img/sobre_compra.jpg" alt="">
+                                <p>Venda e compre livros</p>
+                            </article>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="slide">
+                    <article class="terceira_section">
+                        <div class="conteudo_ter_section">
+                            <h2>Junte-se a nós</h2>
+                            <button>
+                                <a href="cadastro.html">Cadastre-se</a>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="navigation">
+                    <label class="rab" for="slide1"></label>
+                    <label class="rab" for="slide2"></label>
+                    <label class="rab" for="slide3"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adicionado">
+        <h2>Adicionados Recentemente</h2>
+        <button class="pre-btn">&#10094;</button>
+        <button class="nxt-btn">&#10095;</button>
+
+        <section class="product_container">
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha" onclick="abrirAlerta()">
+                            <label for="estrelinha" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha2" onclick="abrirAlerta()">
+                            <label for="estrelinha2" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha3" onclick="abrirAlerta()">
+                            <label for="estrelinha3" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha4" onclick="abrirAlerta()">
+                            <label for="estrelinha4" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha5" onclick="abrirAlerta()">
+                            <label for="estrelinha5" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha6" onclick="abrirAlerta()">
+                            <label for="estrelinha6" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha7" onclick="abrirAlerta()">
+                            <label for="estrelinha7" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha8" onclick="abrirAlerta()">
+                            <label for="estrelinha8" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <section class="gratis">
+        <h2>Outros</h2>
+        <button class="pre-btn">&#10094;</button>
+        <button class="nxt-btn">&#10095;</button>
+
+        <section class="product_container">
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha9" onclick="abrirAlerta()">
+                            <label for="estrelinha9" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha10" onclick="abrirAlerta()">
+                            <label for="estrelinha10" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha11" onclick="abrirAlerta()">
+                            <label for="estrelinha11" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha12" onclick="abrirAlerta()">
+                            <label for="estrelinha12" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha13" onclick="abrirAlerta()">
+                            <label for="estrelinha13" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha14" onclick="abrirAlerta()">
+                            <label for="estrelinha14" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha15" onclick="abrirAlerta()">
+                            <label for="estrelinha15" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards2">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha16" onclick="abrirAlerta()">
+                            <label for="estrelinha16" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <section class="venda">
+        <h2>Á Venda</h2>
+        <button class="pre-btn">&#10094;</button>
+        <button class="nxt-btn">&#10095;</button>
+
+        <section class="product_container">
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha17" onclick="abrirAlerta()">
+                            <label for="estrelinha17" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha18" onclick="abrirAlerta()">
+                            <label for="estrelinha18" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha19" onclick="abrirAlerta()">
+                            <label for="estrelinha19" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha20" onclick="abrirAlerta()">
+                            <label for="estrelinha20" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha21" onclick="abrirAlerta()">
+                            <label for="estrelinha21" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha22" onclick="abrirAlerta()">
+                            <label for="estrelinha22" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container_card">
+                <div class="face_card">
+                    <div class="cards">
+                        <div class="usuario">
+                            <div class="foto_usuario"><img src="" alt=""></div>
+                            <p class="nome">Nome do Usuário</p>
+                            <input type="checkbox" name="" id="estrelinha23" onclick="abrirAlerta()">
+                            <label for="estrelinha23" class="estre">&#9733;</label>
+                        </div>
+                        <div class="div_livros">
+                            <div class="img_livro">
+                                <img src="" alt="">
+                            </div>
+                            <p class="nome_livro">Nome do Livro</p>
+                            <p class="preco">R$ 0,00</p>
+                        </div>
+                    </div>
+                    <div class="back_card">
+                        <p></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <section class="ranking">
+        <div class="container_ranking">
+            <div class="rank_usuario">
+                <h2>Ranking dos Usuários</h2>
+                <article class="elementos_rank_usu">
+                    <div class="lugar">
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                        </div>
+                        <div class="quant">
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                        </div>
+                        <div class="quant">
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                        </div>
+                        <div class="quant">
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                        </div>
+                        <div class="quant">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="rank_livro">
+                <h2>Ranking dos Livros</h2>
+                <article class="elementos_rank_livro">
+                    <div class="lugar_rank">
+                        <div class="lugar_numb">
+                            <p>1º</p>
+                        </div>
+                        <div class="lugar_livro">
+                            <p>Nome do Livro</p>
+                        </div>
+                    </div>
+
+                    <div class="lugar_rank">
+                        <div class="lugar_numb">
+                            <p>2º</p>
+                        </div>
+                        <div class="lugar_livro">
+                            <p>Nome do Livro</p>
+                        </div>
+                    </div>
+
+                    <div class="lugar_rank">
+                        <div class="lugar_numb">
+                            <p>3º</p>
+                        </div>
+                        <div class="lugar_livro">
+                            <p>Nome do Livro</p>
+                        </div>
+                    </div>
+
+                    <div class="lugar_rank">
+                        <div class="lugar_numb">
+                            <p>4º</p>
+                        </div>
+                        <div class="lugar_livro">
+                            <p>Nome do Livro</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="redes">
+            <span><a href=""><img src="img/twitter.png" alt=""></a></span>
+            <span><a href=""><img src="img/facebook.png" alt=""></a></span>
+            <span><a href=""><img src="img/instagram (1).png" alt=""></a></span>
+        </div>
+        <div class="menu_footer">
+            <nav class="nav_footer">
+                <ul>
+                    <li><a href="index2.html">Inicio</a></li>
+                    <li><a href="cadastro1.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="sobre_nos.html">Sobre nós</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contato">
+            <p>Telefone: (11) 00000-0000</p>
+            <p>E-mail: leituragram@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/cadastro2.css">
+    <link rel="icon" href="img/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='http://files.rafaelwendel.com/jquery.js' defer></script>
+    <script type='text/javascript' src='cep.js' defer></script>
+    <title>Leituragram - Cadastre-se</title>
+</head>
+<body>
+    <section class="section_principal">
+        <form action="" method="POST" enctype="multipart/form-data" class="form">
+            <main class="main_form">
+                <h1 class="form_titulo">Cadastre-se</h1>
+    
+                <div class="elementos_form">
+                    <input type="text" name="cep" id="cep" maxlength="8" class="form_input" required>
+                    <label for="cep">CEP<span>*</span> </label>
+                </div>
+
+                <div class="elementos_form">
+                    <input type="text" name="rua" id="rua" size="45" class="form_input" required>
+                    <label for="rua">Rua <span>*</span>  </label>
+                </div>
+
+                <div class="elementos_form">
+                    <input type="text" name="numero" id="numero" size="5" class="form_input" required>
+                    <label for="numero">Número <span>*</span>  </label>
+                </div>
+
+                <div class="elementos_form">
+                    <input type="text" name="bairro" id="bairro" size="25" class="form_input" required>
+                    <label for="bairro">Bairro <span>*</span>  </label>
+                </div>
+
+                <div class="elementos_form">
+                    <input type="text" name="complemento" id="complemento" class="form_input" required>
+                    <label for="complemento">Complemento <span>*</span>  </label>
+                </div>
+
+                <div class="form_estado_cidade">
+                    <div class="elementos_form">
+                        <input type="text" name="cidade" id="cidade" size="25" class="cidade" required>
+                        <label for="cidade" class="form_input">Cidade <span>*</span> </label>
+                    </div>
+    
+                    <div class="select_estado">
+                        <label for="estados" class="estados">Estados <span>*</span>  </label>
+                        <select name="estados" id="estados" required>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form_btn">
+                    <button type="button" class="cadastrar_btn"><a href="cadastro1.html">Voltar</a></button>
+                    <button type="submit" class="cadastrar_btn">Cadastrar-se</button>
+                </div>  
+            </main>
+        </form>
+        
+        <aside>
+            <h1><a href="index2.html">Leituragram</a></h1>
+            <figure>
+                <img src="img/cadastro1.2.jpg" alt="">
+            </figure>
+        </aside>
+    </section>
+</body>
+</html>

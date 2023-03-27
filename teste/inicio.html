@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="icon" href="img/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <title>Leituragram</title>
+</head>
+<body>
+    <header>
+        <div class="div_header">
+            <img src="img/logoHeader.jpg" alt="" class="logo_header">
+        </div>
+    </header>
+
+    <nav>
+        <a href="inicio.html" class="inicio">Leituragram</a>
+
+        <div class="pesquisa"> 
+            <label for="categoria" class="cate">
+                <p class="p_cate">Categoria</p> 
+                <p class="seta">&raquo;</p>
+                <div class="sub_menu">
+                    <ul>
+                        <li><a href="#" class="borda_dinamica">Ação</a></li>
+                        <li><a href="#" class="borda_dinamica">Autoajuda</a></li>
+                        <li><a href="#" class="borda_dinamica">Aventura</a></li>
+                        <li><a href="#" class="borda_dinamica">Biografia</a></li>
+                        <li><a href="#" class="borda_dinamica">Conto</a></li>
+                        <li><a href="#" class="borda_dinamica">Criminal</a></li>
+                        <li><a href="#" class="borda_dinamica">Distopia</a></li>
+                        <li><a href="#" class="borda_dinamica">Fantasia</a></li>
+                        <li><a href="#" class="borda_dinamica">Ficção</a></li>
+                        <li><a href="#" class="borda_dinamica">História</a></li>
+                        <li><a href="#" class="borda_dinamica">Horror</a></li>
+                        <li><a href="#" class="borda_dinamica">Humor</a></li>
+                        <li><a href="#" class="borda_dinamica">Mistério</a></li>
+                        <li><a href="#" class="borda_dinamica">Romance</a></li>        
+                        <li><a href="#" class="borda_dinamica">Suspense</a></li>
+                    </ul>
+                </div>
+            </label> 
+            <div class="div_barra_pesquisa ">
+                <input type="text" class="barra_pesquisa" placeholder="Pesquisar">
+                <a href="#">
+                    <img src="img/loupe.png" alt="" class="lupa">
+                </a>
+            </div>
+        </div>
+        <ul class="menu_pri">
+            <li><a href="inicio.html" class="borda_dinamica seg_inicio">Início</a></li>
+            <li><a href="sobre_nos.html" class="borda_dinamica">Sobre nós</a></li>
+            <li><a href="cadastro.html" class="borda_dinamica">Cadastre-se</a></li>
+            <li><a href="login.html" class="borda_dinamica li_tinta">Entrar</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="section_slide">
+        <div class="content">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1">
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+            
+                <div class="slide s1">
+                    <section class="pri_section">
+                        <div class="pri_section_div">
+                
+                            <div class="texto">
+                                <h1>Leituragram</h1>
+                                <p>Somos uma plataforma que conecta leitores e auxilia no processo de passar livros adiante.</p>
+                            </div>
+                
+                            <div class="img">
+                                <figure>
+                                    <img src="img/sobrenos.jpg" alt="">
+                                </figure>
+                            </div>
+                
+                        </div>
+                    </section>
+                </div>
+
+                <div class="slide">
+                    <section class="seg_section">
+                        <div class="seg_section_div">
+                            <div class="livros">
+                                <img src="img/sobre_livros.jpg" alt="">
+                                <p>Disponibilize e adquira livros</p>
+                            </div>
+                
+                            <div class="interacao">
+                                <img src="img/sobre_interacao.jpg" alt="">
+                                <p>Interaja com os usuários do site</p>
+                            </div>
+                
+                            <div class="comprar">
+                                <img src="img/sobre_compra.jpg" alt="">
+                                <p>Venda e compre livros</p>
+                            </div>
+                        </div>
+                    </section>
+                
+                </div>
+
+                <div class="slide">
+                    <section class="ter_section">
+                        <div class="ter_section_div">
+                            <h1>Junte-se a nós</h1>
+                            <button>
+                                <a href="cadastro.html">Cadastre-se</a>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="navigation">
+                    <label class="rab" for="slide1"></label>
+                    <label class="rab" for="slide2"></label>
+                    <label class="rab" for="slide3"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adicionado">
+
+        <h1>Adicionados Recentemente</h1>
+
+        <i id="left">&raquo;</i>
+
+        <div class="div_adicionado">
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <input type="checkbox" name="" id="estrelinha" onclick="abrirAlerta()">
+                    <label for="estrelinha" class="estre">&#9733;</label>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <input type="checkbox" name="" id="estrelinha2">
+                    <label for="estrelinha2" class="estre">&#9733;</label>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <input type="checkbox" name="" id="estrelinha3">
+                    <label for="estrelinha3" class="estre">&#9733;</label>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <input type="checkbox" name="" id="estrelinha4">
+                    <label for="estrelinha4" class="estre">&#9733;</label>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+        <i id="right">&raquo;</i>
+        
+    </section>
+
+    <section class="gratis">
+
+        <h1>Outros</h1>
+
+        <div class="div_adicionado">
+
+            <div class="cards2">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards2">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards2">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards2">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="venda">
+
+        <h1>Á Venda</h1>
+
+        <div class="div_adicionado">
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                    <p class="preco">R$ 0,00</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                    <p class="preco">R$ 0,00</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                    <p class="preco">R$ 0,00</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="usuario">
+                    <div class="foto_usuario"><img src="" alt=""></div>
+                    <p class="nome">Nome do Usuário</p>
+                    <p class="estrela">&#10025;</p>
+                </div>
+                <div class="div_livros">
+                    <div class="img_livro">
+                        <img src="" alt="">
+                    </div>
+                    <p class="nome_livro">Nome do Livro</p>
+                    <p class="preco">R$ 0,00</p>
+                </div>
+                <div class="btn_visitar">
+                    <button>
+                        <a href="">Visitar</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="ranking">
+
+        <div class="div_ranking">
+            <div class="rank_usuario">
+                <h1>Ranking dos Usuários</h1>
+
+                <div class="div_rank_usuario">
+
+                    <div class="lugar">
+
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                            <p class="est">&#10025;</p>
+                        </div>
+                        <div class="quant">
+                        </div>
+                    
+                    </div>
+
+                    <div class="lugar">
+
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                        </div>
+                        <div class="quant">
+                        </div>
+
+                    </div>
+
+                    <div class="lugar">
+
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                        </div>
+                        <div class="quant">
+                        </div>
+
+                    </div>
+
+                    <div class="lugar">
+
+                        <div class="img_pri">
+                            <img src="" alt="">
+                        </div>
+                        <div class="lugar_nome">
+                            <p>Nome do Usuário</p>
+                        </div>
+                        <div class="quant_estrela">
+                        </div>
+                        <div class="quant">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="rank_livro">
+                <h1>Ranking dos Livros</h1>
+
+                <div class="div_rank_livro">
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<script src="js/carrosel.js"></script>
+<script src="js/menuscript.js"></script>
+<script src="js/alertaestrela.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

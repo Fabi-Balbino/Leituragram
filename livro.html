@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/livro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <title>Leituragram - Livro</title>
+</head>
+<body>
+    <header>
+        <div class="div_header">
+            <img src="img/logoHeader.jpg" alt="" class="logo_header">
+        </div>
+    </header>
+
+    <nav>
+        <a href="index2.html" class="inicio">Leituragram</a>
+        <div class="pesquisa"> 
+            <label for="categoria" class="cate">
+                <p class="p_cate">Categoria</p> 
+                <p class="seta">&raquo;</p>
+                <div class="sub_menu">
+                    <ul>
+                        <li><a href="#" class="borda_dinamica">Ação</a></li>
+                        <li><a href="#" class="borda_dinamica">Autoajuda</a></li>
+                        <li><a href="#" class="borda_dinamica">Aventura</a></li>
+                        <li><a href="#" class="borda_dinamica">Biografia</a></li>
+                        <li><a href="#" class="borda_dinamica">Conto</a></li>
+                        <li><a href="#" class="borda_dinamica">Criminal</a></li>
+                        <li><a href="#" class="borda_dinamica">Distopia</a></li>
+                        <li><a href="#" class="borda_dinamica">Fantasia</a></li>
+                        <li><a href="#" class="borda_dinamica">Ficção</a></li>
+                        <li><a href="#" class="borda_dinamica">História</a></li>
+                        <li><a href="#" class="borda_dinamica">Horror</a></li>
+                        <li><a href="#" class="borda_dinamica">Humor</a></li>
+                        <li><a href="#" class="borda_dinamica">Mistério</a></li>
+                        <li><a href="#" class="borda_dinamica">Romance</a></li>        
+                        <li><a href="#" class="borda_dinamica">Suspense</a></li>
+                    </ul>
+                </div>
+            </label> 
+            <div class="div_barra_pesquisa ">
+                <input type="text" class="barra_pesquisa" placeholder="Pesquisar">
+                <a href="#">
+                    <img src="img/loupe.png" alt="" class="lupa">
+                </a>
+            </div>
+        </div>
+        <ul class="menu_pri">
+            <li><a href="inicio.html" class="borda_dinamica seg_inicio">Início</a></li>
+            <li><a href="sobre_nos.html" class="borda_dinamica">Sobre nós</a></li>
+            <li><a href="cadastro.html" class="borda_dinamica">Cadastre-se</a></li>
+            <li><a href="login.html" class="borda_dinamica li_tinta">Entrar</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="pri_section">
+
+        <div class="pri_div_princi">
+            <div class="div_one">
+                <div class="div_usuario">
+                    <figure>
+                        <img src="" alt="" srcset="">
+                    </figure>
+                    <p>Nome do Usuário</p>
+                </div>
+
+                <figure class="img_livro">
+                    <img src="" alt="">
+                </figure>
+            </div>
+            <div class="div_two">
+                <div class="div_two_button">
+                    <button class="favorito">
+                        <a href="#">Favoritar</a>
+                    </button>
+
+                    <button class="requisitar">
+                        <a href="#">Requisitar</a>
+                    </button>
+                </div>
+                <div class="div_two_sinopse">
+                    <h1 class="titulo_sinop">Sinopse</h1>
+                    <div class="texto_sinopse">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seg_section">
+        <div class="seg_div">
+            <h1 class="titulo_coment">Sessão de Comentários</h1>
+            <form action="" id="formulario">
+                <div class="div_nome_usuario">
+                    <img src="" alt="" class="foto" id="foto_usuario">
+                    <input type="text" value="Nome do Usuario" id="nome_usuario" readonly>
+                </div>
+
+                <div class="div_comentario">
+                    <textarea name="" id="comentario" cols="130" rows="6" required maxlength="200"></textarea>
+                </div>
+
+                <div class="button_sub">
+                    <button type="submit">Comentar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="ter_section">
+        <div class="ter_div" id="comentar">
+            <span></span>
+            <p></p>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/comentario.js"></script>
+</body>
+</html>

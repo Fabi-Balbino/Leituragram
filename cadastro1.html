@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/cadastro1.css">
+    <link rel="icon" href="img/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300&family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
+    <script src="js/mascara_telefone.js" defer></script>
+    <title>Leituragram - Cadastre-se</title>
+</head>
+<body>
+
+    <section class="section_principal">
+        <aside>
+            <h1><a href="index2.html">Leituragram</a></h1>
+            <figure>
+                <img src="img/cadastro1.1.jpg" alt="">
+            </figure>
+        </aside>
+
+        <form action="" method="POST" enctype="multipart/form-data" class="form">
+            <main class="main_form">
+
+                <h1 class="form_titulo">Cadastre-se</h1>
+    
+                <div class="elementos_form">
+                    <input type="text" name="nome" id="nome" class="form_input" required>
+                    <label for="nome">Nome <span>*</span> </label>
+                </div>
+                    
+                <div class="elementos_form">
+                    <input type="text" name="data_nasc" id="data_nasc" class="form_input data" required>
+                    <label for="data_nasc">Data de Nascimento <span>*</span> </label>
+                </div>
+                    
+                <div class="elementos_form">
+                    <input type="number" autocomplete="off"  maxlength="14"  name="cpf" id="cpf" class="form_input" required>
+                    <label for="cpf">CPF <span>*</span>  </label>
+                </div>
+    
+                <div class="elementos_form">
+                    <input type="tel" maxlength="15" onkeyup="handlePhone(event)" name="telefone" id="telefone" class="form_input" required>
+                    <label for="telefone">Telefone <span>*</span>  </label>
+                </div>
+                    
+                <div class="elementos_form">
+                    <input type="text" name="email" id="email" class="form_input" required>
+                    <label for="email">Email <span>*</span>  </label>
+                </div>
+    
+                <div class="elementos_form">
+                    <input type="password" name="senha" id="senha" class="form_input" required>
+                    <label for="senha">Senha <span>*</span> </label>
+                </div>
+
+                <div>
+                    <label for="avatar" class="avatar">Foto de Perfil</label>
+                    <input type="file" name="avatar" id="avatar" accept="image/*">    
+                </div>
+
+                <div class="form_btn">
+                    <button type="submit" class="cadastrar_btn">Salvar</button>
+                    <button type="button" class="cadastrar_btn"><a href="cadastro2.html">Próximo</a></button>
+                </div>
+                
+            </main>
+        </form>
+
+    </section>
+</body>
+</html>

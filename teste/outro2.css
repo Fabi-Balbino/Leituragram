@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product_container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product_container::-webkit-scrollbar{
+    display: none;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.pre-btn{
+    left: 0;
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+.div_adicionado{
+    margin: 0 10px 0 10px;
+}
+
+.adicionado h1, .venda h1{
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-family: 'Merienda', cursive;
+    color: #48d1cc;
+    text-shadow: 1px 1.5px 1px #046a67;
+}
+
+.cards{
+    border-radius: 25px;
+    width: 270px;
+    height: 360px; 
+    background-color: #69e3df69;
+}
+
+.cards2{
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 270px;
+    height: 360px; 
+    background-color: #48d1cc;
+}
+
+.usuario{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto_usuario{
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.nome{
+    font-size: 1.1em;
+}
+
+.estrela{
+    font-size: 2em;
+}
+
+.div_livros{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img_livro{
+    height: 200px;
+    width: 170px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+}
+
+p.nome_livro{
+    font-size: 1.1em;
+    padding: 5px;
+}
